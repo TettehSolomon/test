@@ -1,6 +1,14 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
-    ]
-  }
-  
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "^(?!.*\\.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|otf|eot|json)$).*$"
+        }
+      ],
+      "destination": "/"
+    }
+  ]
+}
