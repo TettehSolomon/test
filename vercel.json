@@ -1,14 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "./",
-      "has": [
-        {
-          "type": "host",
-          "value": "^(?!.*\\.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|otf|eot|json)$).*$"
-        }
-      ]
-    }
-  ]
-}
+    "rewrites": [
+      { "source": "/(./*)", "destination": "/" }
+    ]
+  }
