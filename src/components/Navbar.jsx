@@ -1,4 +1,5 @@
 import logo from '../assets/images/faces/nibbs_logo.png';
+import prof from '../assets/images/faces/prof.jpg';
 
 const Navbar = () => {
     return (
@@ -75,7 +76,7 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item nav-profile dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                                    <img src="./src/assets/images/faces/prof.jpg" alt="profile" />
+                                    <img src={ prof } alt="profile" />
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                                     <a className="dropdown-item">
